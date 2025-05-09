@@ -1,4 +1,3 @@
-
 # TypeScript for Software Development Engineers in Test (SDET)
 
 Welcome to the TypeScript for SDETs repository! This repository contains comprehensive course materials and executable code examples for learning TypeScript, specifically tailored for Software Development Engineers in Test (SDETs). The course is divided into 15 modules, each focusing on different aspects of TypeScript, from basic syntax to advanced topics like generics, functional programming, and debugging.
