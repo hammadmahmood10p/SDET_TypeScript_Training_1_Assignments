@@ -15,31 +15,36 @@
 // Why node Doesn't Work?
 // node executes JavaScript/TypeScript files as a normal script and doesn’t recognize Jest’s test function.
 // Jest provides its own environment, making functions like test() available.
-// Section 1: Unit Testing with Jest and TypeScript
-// 1.1 Writing Type-Safe Unit Tests
-export function add(a, b) {
-    return a + b;
-}
-test("adds two numbers", () => {
-    expect(add(2, 3)).toBe(5);
-    console.log("add(2, 3) test passed");
-});
-// 1.2 Configuring Jest with TypeScript
-// Jest configuration is done via npm commands, not in code.
-// Section 2: Debugging with Source Maps
-// 2.1 Enabling Source Maps
-// Source maps are enabled in tsconfig.json, not in code.
-// Section 3: Tooling in TypeScript
-// 3.1 TypeScript Compiler API
-import * as ts from "typescript";
-function analyzeCode(code) {
-    const sourceFile = ts.createSourceFile("test.ts", code, ts.ScriptTarget.Latest, true);
-    ts.forEachChild(sourceFile, (node) => {
-        console.log("Node kind:", ts.SyntaxKind[node.kind]);
-    });
-}
-const code = `const x: number = 10;`;
-analyzeCode(code);
+// // Section 1: Unit Testing with Jest and TypeScript
+// // 1.1 Writing Type-Safe Unit Tests
+// export function add(a: number, b: number): number {
+//     return a + b;
+// }
+// test("adds two numbers", () => {
+//     expect(add(2, 3)).toBe(5);
+//     console.log("add(2, 3) test passed");
+// });
+// // 1.2 Configuring Jest with TypeScript
+// // Jest configuration is done via npm commands, not in code.
+// // Section 2: Debugging with Source Maps
+// // 2.1 Enabling Source Maps
+// // Source maps are enabled in tsconfig.json, not in code.
+// // Section 3: Tooling in TypeScript
+// // 3.1 TypeScript Compiler API
+// import * as ts from "typescript";
+// function analyzeCode(code: string): void {
+//     const sourceFile = ts.createSourceFile(
+//         "test.ts",
+//         code,
+//         ts.ScriptTarget.Latest,
+//         true
+//     );
+//     ts.forEachChild(sourceFile, (node) => {
+//         console.log("Node kind:", ts.SyntaxKind[node.kind]);
+//     });
+// }
+// const code = `const x: number = 10;`;
+// analyzeCode(code);
 // Exercises and Practice Tasks
 // Exercise 1: Writing Unit Tests
 export function multiply(a, b) {
@@ -58,7 +63,7 @@ function divide(a, b) {
 }
 console.log("Divide result:", divide(10, 2)); // 5
 try {
-    console.log("Divide result:", divide(10, 0));
+    console.log("Divide result:", divide(10, 1));
 }
 catch (error) {
     if (error instanceof Error) {

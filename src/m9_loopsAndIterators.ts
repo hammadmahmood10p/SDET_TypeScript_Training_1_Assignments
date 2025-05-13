@@ -1,57 +1,57 @@
-// Import the readline module for handling user input in Node.js
-import * as readline from 'readline';
+// // Import the readline module for handling user input in Node.js
+// import * as readline from 'readline';
 
-// Create an interface for reading input from the terminal
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// // Create an interface for reading input from the terminal
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-// for Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i); // Output: 0 1 2 3 4
-}
+// // for Loop
+// for (let i = 0; i < 5; i++) {
+//     console.log(i); // Output: 0 1 2 3 4
+// }
 
-// while Loop
-let i = 0;
-while (i < 5) {
-    console.log(i); // Output: 0 1 2 3 4
-    i++;
-}
+// // while Loop
+// let i = 0;
+// while (i < 5) {
+//     console.log(i); // Output: 0 1 2 3 4
+//     i++;
+// }
 
-// do...while Loop
-let j = 0;
-do {
-    console.log(j); // Output: 0 1 2 3 4
-    j++;
-} while (j < 5);
+// // do...while Loop
+// let j = 0;
+// do {
+//     console.log(j); // Output: 0 1 2 3 4
+//     j++;
+// } while (j < 5);
 
-// Using for...of with Arrays
-let fruits: string[] = ['apple', 'banana', 'cherry'];
+// // Using for...of with Arrays
+// let fruits: string[] = ['apple', 'banana', 'cherry'];
 
-for (let fruit of fruits) {
-    console.log(fruit); // Output: apple, banana, cherry
-}
+// for (let fruit of fruits) {
+//     console.log(fruit); // Output: apple, banana, cherry
+// }
 
-// Using for...in with Objects
-let person = { firstName: 'John', lastName: 'Doe', age: 30 };
+// // Using for...in with Objects
+// let person = { firstName: 'John', lastName: 'Doe', age: 30 };
 
-for (let key in person) {
-    console.log(key, person[key]);
-    // Output: firstName John, lastName Doe, age 30
-}
+// for (let key in person) {
+//     console.log(key, person[key]);
+//     // Output: firstName John, lastName Doe, age 30
+// }
 
-// Practical Examples
+// // Practical Examples
 
-// Example 1: Using for loop to sum elements in an array
-let numbers: number[] = [10, 20, 30, 40, 50];
-let sum = 0;
+// // Example 1: Using for loop to sum elements in an array
+// let numbers: number[] = [10, 20, 30, 40, 50];
+// let sum = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
 
-console.log(sum); // Output: 150
+// console.log(sum); // Output: 150
 
 // Example 2: Using while loop to find the first number divisible by 7
 let k = 1;

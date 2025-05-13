@@ -1,73 +1,73 @@
 
-// 1. String Manipulation //
-//-----------------------//
+// // 1. String Manipulation //
+// //-----------------------//
 
-// --- String Concatenation --- //
-let firstName: string = "John";
-let lastName: string = "Doe";
-let fullName: string = `${firstName} ${lastName}`;
+// // --- String Concatenation --- //
+// let firstName: string = "John";
+// let lastName: string = "Doe";
+// let fullName: string = `${firstName} ${lastName}`;
 
-console.log(fullName);
-// Output: John Doe
-
-
-// --- Substring Extraction --- //
-let testMessage: string = "Test Failed: Username is invalid";
-let reason: string = testMessage.slice(13);
-
-console.log(reason);
-// Output: Username is invalid
+// console.log(fullName);
+// // Output: John Doe
 
 
-// --- String Length --- //
-let input: string = "password123";
-console.log(input.length);
-// Output: 11
+// // --- Substring Extraction --- //
+// let testMessage: string = "Test Failed: Username is invalid";
+// let reason: string = testMessage.slice(13);
+
+// console.log(reason);
+// // Output: Username is invalid
 
 
-// --- Changing Case --- //
-let userInput: string = "TestUser";
-console.log(userInput.toLowerCase());
-// Output: testuser
+// // --- String Length --- //
+// let input: string = "password123";
+// console.log(input.length);
+// // Output: 11
 
 
-// --- Trimming Strings --- //
-let rawInput: string = " username ";
-console.log(rawInput.trim());
-// Output: username
+// // --- Changing Case --- //
+// let userInput: string = "TestUser";
+// console.log(userInput.toLowerCase());
+// // Output: testuser
 
 
-// --- Replacing Substrings --- //
-let url: string = "http://example.com/{userId}";
-let updatedUrl: string = url.replace("{userId}", "12345");
-
-console.log(updatedUrl);
-// Output: http://example.com/12345
+// // --- Trimming Strings --- //
+// let rawInput: string = " username ";
+// console.log(rawInput.trim());
+// // Output: username
 
 
-// --- Formatting Output --- //
-let testCase: string = "Login Test";
-let result: boolean = true;
+// // --- Replacing Substrings --- //
+// let url: string = "http://example.com/{userId}";
+// let updatedUrl: string = url.replace("{userId}", "12345");
 
-console.log(`Test Case: ${testCase}, Result: ${result ? "Passed" : "Failed"}`);
-// Output: Test Case: Login Test, Result: Passed
-
-
-// --- Parsing Data --- //
-let response: string = "User ID: 5678, Status: Active";
-let userId: string = response.split(",")[0].split(":")[1].trim();
-
-console.log(userId);
-// Output: 5678
+// console.log(updatedUrl);
+// // Output: http://example.com/12345
 
 
-// --- Dynamic Test Content --- //
-function generateTestEmail(username: string): string {
-    return `${username.toLowerCase()}@test.com`;
-}
+// // --- Formatting Output --- //
+// let testCase: string = "Login Test";
+// let result: boolean = true;
 
-console.log(generateTestEmail("TestUser"));
-// Output: testuser@test.com
+// console.log(`Test Case: ${testCase}, Result: ${result ? "Passed" : "Failed"}`);
+// // Output: Test Case: Login Test, Result: Passed
+
+
+// // --- Parsing Data --- //
+// let response: string = "User ID: 5678, Status: Active";
+// let userId: string = response.split(",")[0].split(":")[1].trim();
+
+// console.log(userId);
+// // Output: 5678
+
+
+// // --- Dynamic Test Content --- //
+// function generateTestEmail(username: string): string {
+//     return `${username.toLowerCase()}@test.com`;
+// }
+
+// console.log(generateTestEmail("TestUser"));
+// // Output: testuser@test.com
 
 
 // --- Activity: Extract Domain from Email --- //

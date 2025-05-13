@@ -1,30 +1,30 @@
-let itemName: string = "Laptop";
-let price: number = 1599.99;
-let quantity: number = 2;
+// let itemName: string = "Laptop";
+// let price: number = 1599.99;
+// let quantity: number = 2;
 
-console.log('');
-console.log('-------- OUTPUT --------');
-console.log(`Item: ${itemName}, Price: ${price}, Quantity: ${quantity}`);
+// console.log('');
+// console.log('-------- OUTPUT --------');
+// console.log(`Item: ${itemName}, Price: ${price}, Quantity: ${quantity}`);
 
-// ----------------- Aliases ----------------- //
+// // ----------------- Aliases ----------------- //
 
-type CartItem = {
-    name: string;
-    price: number;
-    quantity: number;
-};
+// type CartItem = {
+//     name: string;
+//     price: number;
+//     quantity: number;
+// };
 
-let cart: CartItem[] = [
-    {name: "Laptop", price: 1300, quantity: 2},
-    {name: "Keyboard", price: 499.99, quantity: 5},
-];
+// let cart: CartItem[] = [
+//     {name: "Laptop", price: 1300, quantity: 2},
+//     {name: "Keyboard", price: 499.99, quantity: 5},
+// ];
 
-console.log('');
-console.log('-------- OUTPUT --------');
+// console.log('');
+// console.log('-------- OUTPUT --------');
 
-cart.forEach(item => {
-    console.log(`${item.quantity} x ${item.name} @ ${item.price} each`);
-});
+// cart.forEach(item => {
+//     console.log(`${item.quantity} x ${item.name} @ ${item.price} each`);
+// });
 
 // ----------------- Exercise ----------------- //
 

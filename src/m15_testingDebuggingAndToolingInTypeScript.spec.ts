@@ -24,46 +24,46 @@
 // Jest provides its own environment, making functions like test() available.
 
 
-// Section 1: Unit Testing with Jest and TypeScript
+// // Section 1: Unit Testing with Jest and TypeScript
 
-// 1.1 Writing Type-Safe Unit Tests
-export function add(a: number, b: number): number {
-    return a + b;
-}
+// // 1.1 Writing Type-Safe Unit Tests
+// export function add(a: number, b: number): number {
+//     return a + b;
+// }
 
-test("adds two numbers", () => {
-    expect(add(2, 3)).toBe(5);
-    console.log("add(2, 3) test passed");
-});
+// test("adds two numbers", () => {
+//     expect(add(2, 3)).toBe(5);
+//     console.log("add(2, 3) test passed");
+// });
 
-// 1.2 Configuring Jest with TypeScript
-// Jest configuration is done via npm commands, not in code.
+// // 1.2 Configuring Jest with TypeScript
+// // Jest configuration is done via npm commands, not in code.
 
-// Section 2: Debugging with Source Maps
+// // Section 2: Debugging with Source Maps
 
-// 2.1 Enabling Source Maps
-// Source maps are enabled in tsconfig.json, not in code.
+// // 2.1 Enabling Source Maps
+// // Source maps are enabled in tsconfig.json, not in code.
 
-// Section 3: Tooling in TypeScript
+// // Section 3: Tooling in TypeScript
 
-// 3.1 TypeScript Compiler API
-import * as ts from "typescript";
+// // 3.1 TypeScript Compiler API
+// import * as ts from "typescript";
 
-function analyzeCode(code: string): void {
-    const sourceFile = ts.createSourceFile(
-        "test.ts",
-        code,
-        ts.ScriptTarget.Latest,
-        true
-    );
+// function analyzeCode(code: string): void {
+//     const sourceFile = ts.createSourceFile(
+//         "test.ts",
+//         code,
+//         ts.ScriptTarget.Latest,
+//         true
+//     );
 
-    ts.forEachChild(sourceFile, (node) => {
-        console.log("Node kind:", ts.SyntaxKind[node.kind]);
-    });
-}
+//     ts.forEachChild(sourceFile, (node) => {
+//         console.log("Node kind:", ts.SyntaxKind[node.kind]);
+//     });
+// }
 
-const code = `const x: number = 10;`;
-analyzeCode(code);
+// const code = `const x: number = 10;`;
+// analyzeCode(code);
 
 // Exercises and Practice Tasks
 
